@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Snake by adler</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<h1>Snake by adlerino</h1>
+			<div class="hud">
+				<div id="score">Score: 0</div>
+				<div id="speed">Speed: 1x</div>
+			</div>
+			<canvas id="gameCanvas" width="400" height="400" aria-label="Snake game"></canvas>
+
+			<div id="overlay" class="overlay hidden">
+				<div class="dialog">
+					<h2 id="overlayTitle">Game Over</h2>
+					<p id="overlayMessage">Your final score: 0</p>
+					<div class="buttons">
+						<button id="restartBtn">Restart</button>
+					</div>
+				</div>
+			</div>
+
+			<section class="instructions">
+				<h3>Controls</h3>
+				<ul>
+					<li>Arrow keys or WASD to move</li>
+					<li>Space to pause / resume</li>
+					<li>Click Restart to play again</li>
+				</ul>
+			</section>
+		</main>
+
+		<script src="script.js" defer></script>
+	</body>
+</html>
